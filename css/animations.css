@@ -1,0 +1,333 @@
+
+/* +++++++++++++++++++++ ANIMATIONS +++++++++++++++++++++ */
+
+
+/* LEFT TILE ANIMATIONS */
+@keyframes leftIn{
+from{left:-100%;}
+to{left:0%;}
+}
+@-webkit-keyframes leftIn /* Safari and Chrome */{
+from{left:-100%;}
+to{left:0%;}
+}
+@-moz-keyframes leftIn{
+from{left:-100%;}
+to{left:0%;}
+}
+@-o-keyframes leftIn{
+from{left:-100%;}
+to{left:0%;}
+}
+
+
+
+
+
+@keyframes leftOut{
+from{left:0%;}
+to{left:-100%;}
+}
+@-webkit-keyframes leftOut /* Safari and Chrome */{
+from{left:0%;}
+to{left:-100%;}
+}
+@-moz-keyframes leftOut{
+from{left:0%;}
+to{left:-100%;}
+}
+@-o-keyframes leftOut{
+from{left:0%;}
+to{left:-100%;}
+}
+
+
+
+
+@keyframes leftArrowIn{
+from{left:5%;}
+to{left:98.5%;}
+}
+@-webkit-keyframes leftArrowIn{
+from{left:5%;}
+to{left:98.5%;}
+}
+@-moz-keyframes leftArrowIn{
+from{left:5%;}
+to{left:98.5%;}
+}
+@-o-keyframes leftArrowIn{
+from{left:5%;}
+to{left:98.5%;}
+}
+
+
+@keyframes leftArrowOut{
+from{left:98.5%;}
+to{left:1.7%;}
+}
+@-webkit-keyframes leftArrowOut{
+from{left:98.5%;}
+to{left:1.7%;}
+}
+@-moz-keyframes leftArrowOut{
+from{left:98.5%;}
+to{left:1.7%;}
+}
+@-o-keyframes leftArrowOut{
+from{left:98.5%;}
+to{left:1.7%;}
+}
+
+
+
+
+/* RIGHT TILE ANIMATIONS */
+@keyframes rightIn{
+from {right:-100%;}
+to{right:0%;}
+}
+@-webkit-keyframes rightIn /* Safari and Chrome */{
+from {right:-100%;}
+to{right:0%;}
+}
+@-moz-keyframes rightIn{
+from {right:-100%;}
+to{right:0%;}
+}
+@-o-keyframes rightIn{
+from {right:-100%;}
+to{right:0%;}
+}
+
+
+@keyframes rightOut{
+from {right:0%;}
+to{right:-100%;}
+}
+@-webkit-keyframes rightOut /* Safari and Chrome */{
+from {right:0%;}
+to{right:-100%;}
+}
+@-moz-keyframes rightOut{
+from {right:0%;}
+to{right:-100%;}
+}
+@-o-keyframes rightOut{
+from {right:0%;}
+to{right:-100%;}
+}
+
+
+
+@keyframes rightArrowIn{
+from{right:5%;}
+to{right:97.199%%;}
+}
+@-webkit-keyframes rightArrowIn{
+from{right:5%;}
+to{right:97.199%%;}
+}
+@-moz-keyframes rightArrowIn{
+from{right:5%;}
+to{right:97.199%%;}
+}
+@-o-keyframes rightArrowIn{
+from{right:5%;}
+to{right:97.199%%;}
+}
+
+
+
+
+@keyframes rightArrowOut{
+from{right:95%;}
+to{right:0%;}
+}
+@-webkit-keyframes rightArrowOut{
+from{right:95%;}
+to{right:0%;}
+}
+@-moz-keyframes rightArrowOut{
+from{right:95%;}
+to{right:0%;}
+}
+@-o-keyframes rightArrowOut{
+from{right:95%;}
+to{right:0%;}
+}
+
+
+
+/* TOP TILE ANIMATIONS */
+@keyframes topIn{
+from {top:-100%;}
+to{top:0%;}
+}
+@-webkit-keyframes topIn /* Safari and Chrome */{
+from {top:-100%;}
+to{top:0%;}
+}
+@-moz-keyframes topIn{
+from {top:-100%;}
+to{top:0%;}
+}
+@-o-keyframes topIn{
+from {top:-100%;}
+to{top:0%;}
+}
+
+
+@keyframes topOut{
+from {top:0%;}
+to{top:-100%;}
+}
+@-webkit-keyframes topOut /* Safari and Chrome */{
+from {top:0%;}
+to{top:-100%;}
+}
+@-moz-keyframes topOut{
+from {top:0%;}
+to{top:-100%;}
+}
+@-o-keyframes topOut{
+from {top:0%;}
+to{top:-100%;}
+}
+
+
+
+@keyframes topArrowIn{
+from{top:5%;}
+to{top:98%;}
+}
+@-webkit-keyframes topArrowIn{
+from{top:5%;}
+to{top:98%;}
+}
+@-moz-keyframes topArrowIn{
+from{top:5%;}
+to{top:98%;}
+}
+@-o-keyframes topArrowIn{
+from{top:5%;}
+to{top:98%;}
+}
+
+
+
+
+@keyframes topArrowOut{
+from{top:95%;}
+to{top:2.8%;}
+}
+@-webkit-keyframes topArrowOut{
+from{top:95%;}
+to{top:2.8%;}
+}
+@-moz-keyframes topArrowOut{
+from{top:95%;}
+to{top:2.8%;}
+}
+@-o-keyframes topArrowOut{
+from{top:95%;}
+to{top:2.8%;}
+}
+
+
+/* BOTTOM TILE ANIMATIONS */
+@keyframes bottomIn{
+from {bottom:-100%;}
+to{bottom:0%;}
+}
+@-webkit-keyframes bottomIn /* Safari and Chrome */{
+from {bottom:-100%;}
+to{bottom:0%;}
+}
+@-o-keyframes bottomIn{
+from {bottom:-100%;}
+to{bottom:0%;}
+}
+@-moz-keyframes bottomIn{
+from {bottom:-100%;}
+to{bottom:0%;}
+}
+
+
+@keyframes bottomOut{
+from {bottom:0%;}
+to{bottom:-100%;}
+}
+@-webkit-keyframes bottomOut /* Safari and Chrome */{
+from {bottom:0%;}
+to{bottom:-100%;}
+}
+@-o-keyframes bottomOut{ /* OPERA */
+from {bottom:0%;}
+to{bottom:-100%;}
+}
+@-moz-keyframes bottomOut{ /* Mozilla */
+from {bottom:0%;}
+to{bottom:-100%;}
+}
+
+
+
+
+
+@keyframes bottomArrowIn{
+from{bottom:5%;}
+to{bottom:95%;}
+}
+@-moz-keyframesbottomArrowIn{
+from{bottom:5%;}
+to{bottom:95%;}
+}
+@-o-keyframes bottomArrowIn{
+from{bottom:5%;}
+to{bottom:95%;}
+}
+@-webkit-keyframes bottomArrowIn{
+from{bottom:5%;}
+to{bottom:95%;}
+}
+
+
+
+@keyframes bottomArrowOut{
+from{bottom:95%;}
+to{bottom:0%;}
+}
+@-o-keyframes bottomArrowOut{
+from{bottom:95%;}
+to{bottom:0%;}
+}
+@-moz-keyframes bottomArrowOut{
+from{bottom:95%;}
+to{bottom:0%;}
+}
+@-webkit-keyframes bottomArrowOut{
+from{bottom:95%;}
+to{bottom:0%;}
+}
+
+
+
+
+@keyframes logoSwell{
+from{width:100px; height:100px;}
+to {width: 200px; height: 200px;}
+}
+@-webkit-keyframes logoSwell{
+from{width:100px; height:100px;}
+to {width: 200px; height: 200px;}
+}
+@keyframes logoShrink{
+from{width:200px; height:200px;}
+to {width: 100px; height: 100px;}
+}
+@-webkit-keyframes logoShrink{
+from{width:200px; height:200px;}
+to {width: 100px; height: 100px;}
+}
+/* +++++++++++++++++++++ END ANIMATIONS +++++++++++++++++++++ */

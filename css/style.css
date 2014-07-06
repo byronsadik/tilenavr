@@ -1,0 +1,315 @@
+body{background-color: #c6432b;}
+
+#container{}
+
+/* .my-overlay{
+    position: fixed;
+    z-index: 5000;
+    top: 0; left: 0;
+    height:100%;
+    width:100%;
+    opacity: 1;
+    display: block;
+    background: rgba(0,0,0,.5);
+}   */
+
+
+.header{position: absolute;
+left: 50%;
+width: 100%;
+margin-left: -50%}
+
+img.logo {   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 300px;
+   height: 300px;
+   margin-top: -150px; /* Half the height */
+   margin-left: -150px; /* Half the width */
+}
+
+@media only screen and (max-width: 801px){
+img.logo {
+   width: 150px;
+   height: 150px;
+   margin-top: -75px; /* Half the height */
+   margin-left: -75px; /* Half the width */
+}
+}
+
+img.logo-grow{
+	width: 200px;
+   	height: 200px;
+   margin-top: -100px; 
+     margin-left: -100px;
+     animation: logoSwell 0.75s;
+-webkit-animation: logoSwell 0.75s;
+}
+
+img.logo-shrink{width: 100px;
+   	height: 100px;
+   margin-top: -50px; 
+     margin-left: -50px;
+     animation: logoShrink 0.75s;
+-webkit-animation: logoShrink 0.75s;
+}
+
+
+h1{font-size: 50px;
+	text-align: center;
+	top:50%;
+	bottom:50%;
+}
+
+
+.test{	width:100%;
+		height:100%;
+		position: fixed;
+		z-index: -1;
+		background-repeat: no-repeat;
+		}
+
+	/* controls left tile arrow */
+.left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid black;
+	border-right: 0px;
+	border-bottom: 25px solid transparent;
+	position: fixed;
+	top: 50%;
+left: 25px;
+z-index: 3;
+margin-top: -25px;
+margin-left: -25px;
+animation: leftArrowOut 0.75s;
+-webkit-animation: leftArrowOut 0.75s;
+-o-animation:leftArrowOut 0.75s;
+-moz-animation:leftArrowOut 0.75s;
+}
+
+
+
+.left-pressed{
+top: 50%;
+right: 0px;
+width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 0px;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+margin-top: -25px;
+margin-left: -25px;
+	position: fixed;
+	z-index: 3;
+animation: leftArrowIn 0.5s;
+-webkit-animation: leftArrowIn 0.5s;
+-o-animation:leftArrowIn 0.5s;
+-moz-animation:leftArrowIn 0.5s;
+
+}
+
+
+/* end left tile arrow */
+
+
+/* controls right tile arrow */
+.right{	width: 0;
+	height: 0;
+position: fixed;
+	top: 50%;
+right: 0%;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-left:0px;
+	border-bottom: 25px solid transparent;
+margin-top: -25px;
+margin-left: -25px;
+z-index: 3;
+animation: rightArrowOut 0.75s;
+-webkit-animation: rightArrowOut 0.75s;
+-o-animation:rightArrowOut 0.75s;
+-moz-animation:rightArrowOut 0.75s;
+}
+
+.right-pressed{	width: 0;
+	height: 0;
+position: fixed;
+	top: 50%;
+right: 97.199%;
+	border-top: 25px solid transparent;
+	border-left: 50px solid black;
+	border-right:0px;
+	border-bottom: 25px solid transparent;
+margin-top: -25px;
+margin-left: -25px;
+z-index: 3;
+animation: rightArrowIn 0.5s;
+-webkit-animation: rightArrowIn 0.5s;
+-o-animation:rightArrowIn 0.5s;
+-moz-animation:rightArrowIn 0.5s;
+}
+
+/* end right tile arrow */
+
+
+/* controls bottom tile arrow */
+
+.down{position: fixed;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid black;
+	border-top:0px;
+position: fixed;
+	bottom: 0%;
+left: 50%;
+margin-top: -25px;
+margin-left: -25px;
+z-index: 3;
+animation: bottomArrowOut 0.75s;
+-webkit-animation: bottomArrowOut 0.75s;
+-o-animation:bottomArrowOut 0.75s;
+-moz-animation:bottomArrowOut 0.75s;
+}
+
+.down-pressed{position: fixed;
+width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid black;
+	border-bottom:0px;
+position: fixed;
+bottom:95%;
+left: 50%;
+margin-top: -25px;
+margin-left: -25px;
+z-index: 3;
+  animation: bottomArrowIn 0.5s;
+-webkit-animation: bottomArrowIn 0.5s;
+-o-animation:bottomArrowIn 0.5s;
+-moz-animation:bottomArrowIn 0.5s;
+}
+
+ /* end bottom tile arrow  */
+
+
+
+
+/* controls top tile arrow */
+
+.top{top: 2.8%;
+left: 50%;
+position: fixed;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid black;
+	border-bottom: 0px;
+margin-top: -25px;
+margin-left: -25px;
+z-index: 3;
+  animation: topArrowOut 0.75s;
+-webkit-animation: topArrowOut 0.75s;
+-o-animation:topArrowOut 0.75s;
+-moz-animation:topArrowOut 0.75s;
+}
+
+.top-pressed{position: fixed;
+		bottom:0px;
+left: 50%;
+position: fixed;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid black;
+	border-top: 0px;
+margin-top: -25px;
+margin-left: -25px;
+z-index: 3;
+   animation: topArrowIn 0.5s;
+-webkit-animation: topArrowIn 0.5s;
+-o-animation:topArrowIn 0.5s;
+-moz-animation:topArrowIn 0.5s;
+}
+
+/* end top tile arrow */
+
+
+/* +++++++++++++++++++++ TILES +++++++++++++++++++++ */
+
+.westeros{left:-300%;
+	background-color:#FF5457;
+}
+
+.westeros-in{ left:0%;
+	animation: leftIn 0.5s;
+	-webkit-animation: leftIn 0.5s;
+	-o-animation:leftIn 0.5s;
+-moz-animation:leftIn 0.5s;
+}
+
+.westeros-out{ left:-300%;
+	animation: leftOut 0.5s;
+	-webkit-animation: leftOut 0.5s;
+	-o-animation:leftOut 0.5s;
+-moz-animation:leftOut 0.5s;
+}
+
+.lebowski{ bottom: -300%;
+			background-color:lime;
+}
+.lebowski-in{ bottom: 0%;
+			animation: bottomIn 0.5s;
+	-webkit-animation: bottomIn 0.5s;
+	-o-animation:bottomIn 0.5s;
+-moz-animation:bottomIn 0.5s;
+			}
+.lebowski-out{ bottom: -300%;
+			animation: bottomOut 0.5s;
+	-webkit-animation: bottomOut 0.5s;
+	-o-animation:bottomOut 0.5s;
+-moz-animation:bottomOut 0.5s;
+}
+
+.birdonit{ top: -300%;
+		background-color:gold;
+}
+
+.birdonit-in{ top: 0%;
+			animation: topIn 0.5s;
+	-webkit-animation: topIn 0.5s;
+	-o-animation:topIn 0.5s;
+-moz-animation:topIn 0.5s;
+}
+
+.birdonit-out{ top: -300%;
+			animation: topOut 0.5s;
+	-webkit-animation: topOut 0.5s;
+	-o-animation:topOut 0.5s;
+-moz-animation:topOut 0.5s;
+}
+
+.mobydick{ right: -300%;
+			background-color:cyan;
+}
+
+.mobydick-in{ right: 0%;
+			animation: rightIn 0.5s;
+	-webkit-animation: rightIn 0.5s;
+	-o-animation:rightIn 0.5s;
+-moz-animation:rightIn 0.5s;
+}
+
+.mobydick-out{ right: -300%;
+animation: rightOut 0.5s;
+	-webkit-animation: rightOut 0.5s;
+	-o-animation:rightOut 0.5s;
+-moz-animation:rightOut 0.5s;
+}
