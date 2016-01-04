@@ -1,17 +1,6 @@
-body{background-color: #c6432b;}
+body{background-color: #ffffff;}
 
 #container{}
-
-/* .my-overlay{
-    position: fixed;
-    z-index: 5000;
-    top: 0; left: 0;
-    height:100%;
-    width:100%;
-    opacity: 1;
-    display: block;
-    background: rgba(0,0,0,.5);
-}   */
 
 
 .header{position: absolute;
