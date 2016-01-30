@@ -70,11 +70,11 @@ $(function() {
     switch (evt.keyCode) {
       case 38: //up key, can also be up-swipe, 
         
-        if (!(openTileCheck()) ){
+        if (!(openTileCheck()) ) {
           moveUp();
         }
 
-        else if (tileIsOpen[0]){
+        else if (tileIsOpen[0]) {
           moveBackUp();
         }
 
@@ -82,11 +82,11 @@ $(function() {
 
       case 39: //right key, can also be right-swipe
         
-        if ( !(openTileCheck()) ){
+        if ( !(openTileCheck()) ) {
           moveRight();
         }
 
-        else if (tileIsOpen[1]){
+        else if (tileIsOpen[1]) {
           moveBackRight();
         }
         
@@ -94,10 +94,10 @@ $(function() {
 
       case 40: //down key, can also be down-swipe
       
-        if ( !(openTileCheck()) ){
+        if ( !(openTileCheck()) ) {
           moveDown();
         }
-        else if (tileIsOpen[2]){
+        else if (tileIsOpen[2]) {
           moveBackDown();
         }
         
@@ -105,10 +105,10 @@ $(function() {
 
       case 37: //left key, can also be left-swipe
       
-        if (!(openTileCheck()) ){
+        if (!(openTileCheck()) ) {
           moveLeft();
         }
-        else if (tileIsOpen[3]){
+        else if (tileIsOpen[3]) {
           moveBackLeft();
         }
       
@@ -125,7 +125,7 @@ $(function() {
         moveUp();
       }
 
-      else if (tileIsOpen[0]){
+      else if (tileIsOpen[0]) {
         moveBackUp();
       }
       
@@ -133,11 +133,11 @@ $(function() {
 
     swipeRight: function(event, direction, distance, duration, fingerCount) {
       
-      if ( !(openTileCheck()) ){
+      if ( !(openTileCheck()) ) {
         moveRight();
       }
 
-      else if (tileIsOpen[1]){
+      else if (tileIsOpen[1]) {
         moveBackRight();
       }
 
@@ -145,11 +145,11 @@ $(function() {
 
     swipeDown: function(event, direction, distance, duration, fingerCount) {
     
-      if ( !(openTileCheck()) ){
+      if ( !(openTileCheck()) ) {
         moveDown();
       }
 
-      else if (tileIsOpen[2]){
+      else if (tileIsOpen[2]) {
         moveBackDown();
       }
       
@@ -161,7 +161,7 @@ $(function() {
         moveLeft();
       }
      
-      else if (tileIsOpen[3]){
+      else if (tileIsOpen[3]) {
         moveBackLeft();
       }
     
@@ -173,10 +173,10 @@ $(function() {
 
 
   // checks if any tiles are on
-  function openTileCheck(){
+  function openTileCheck() {
     var check = false;
       for (var x = 0; x < tileIsOpen.length; x++) {
-        if (tileIsOpen[x] == true){
+        if (tileIsOpen[x] == true) {
             check = true;
             break;
         }
@@ -265,13 +265,13 @@ $(function() {
   }
 
 
-  function openTile(){
+  function openTile() {
     $('h1').css({'display': 'none'});
     $('.active').css({'display': 'none'});
   }
 
 
-  function resetBody(){
+  function resetBody() {
     $('body').css({'background-color': bgColor});
     $('h1').css({'display': 'block'});
   }
