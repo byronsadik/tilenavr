@@ -1,6 +1,6 @@
-$(function() {
+'use strict';
 
-  var tileIsOpen=[false,false,false,false];  
+$(function() {
 
   /* 
     tileIsOpen[0] = TOP
@@ -9,29 +9,32 @@ $(function() {
     tileIsOpen[3] = LEFT
   */
 
+  var tileIsOpen=[false,false,false,false];  
 
   var bgColor = '#ffffff';
+  var allArrows = $('.arrow');
 
-  var allArrows = $('.arrow')
+
   allArrows.addClass('active');
 
 
-  // adding click event listeners for the black arrows
+  // adding click event listeners for the arrows
 
   $('.down').click(function() {
     if ( !(openTileCheck()) ){
       moveUp();
     }
+
     else if (tileIsOpen[2]) {
       moveBackDown();
     }
   });
 
-
   $('.left').click(function() {
     if ( !(openTileCheck()) ) {
       moveRight();
     }
+
     else if (tileIsOpen[3]) {
       moveBackLeft();
     }
@@ -73,7 +76,8 @@ $(function() {
 
         else if (tileIsOpen[0]){
           moveBackUp();
-        } 
+        }
+
         break;
 
       case 39: //right key, can also be right-swipe
@@ -81,6 +85,7 @@ $(function() {
         if ( !(openTileCheck()) ){
           moveRight();
         }
+
         else if (tileIsOpen[1]){
           moveBackRight();
         }
@@ -170,7 +175,7 @@ $(function() {
   // checks if any tiles are on
   function openTileCheck(){
     var check = false;
-      for (x = 0; x < tileIsOpen.length; x++){
+      for (var x = 0; x < tileIsOpen.length; x++) {
         if (tileIsOpen[x] == true){
             check = true;
             break;
@@ -186,87 +191,89 @@ $(function() {
   // this is the code that actually toggles the animations for the tiles; they get called by either the touch, keyboard, or mouse click events
 
 
-  function moveUp(){ 
-          $('.lebowski').removeClass('lebowski-out').addClass('lebowski-in');
-           $('.down').removeClass('active').removeClass('down').addClass('down-pressed');
-            tileIsOpen[2]=true;
-            openTile();
+  function moveUp() { 
+    $('.lebowski').removeClass('lebowski-out').addClass('lebowski-in');
+    $('.down').removeClass('active').removeClass('down').addClass('down-pressed');
+    tileIsOpen[2] = true;
+    openTile();
   }
 
-  function moveLeft(){
-         $('.mobydick').removeClass('mobydick-out').addClass('mobydick-in');
-         $('.right').removeClass('active').removeClass('right').addClass('right-pressed');
-         tileIsOpen[1]=true;
-         openTile();
-        }
+  function moveLeft() {
+    $('.mobydick').removeClass('mobydick-out').addClass('mobydick-in');
+    $('.right').removeClass('active').removeClass('right').addClass('right-pressed');
+    tileIsOpen[1] = true;
+    openTile();
+  }
   
-  function moveDown(){
-         $('.birdonit').removeClass('birdonit-out').addClass('birdonit-in'); 
-          $('.top').removeClass('active').removeClass('top').addClass('top-pressed');
-          tileIsOpen[0]=true;
-          openTile();
-         }
+  function moveDown() {
+    $('.birdonit').removeClass('birdonit-out').addClass('birdonit-in'); 
+    $('.top').removeClass('active').removeClass('top').addClass('top-pressed');
+    tileIsOpen[0]=true;
+    openTile();
+  }
   
-  function moveRight(){
-          $('.westeros').removeClass('westeros-out').addClass('westeros-in'); 
-           $('.left').removeClass('active').removeClass('left').addClass('left-pressed');
-           tileIsOpen[3]=true;
-          openTile();
-          }
+  function moveRight() {
+    $('.westeros').removeClass('westeros-out').addClass('westeros-in'); 
+    $('.left').removeClass('active').removeClass('left').addClass('left-pressed');
+    tileIsOpen[3]=true;
+    openTile();
+  }
 
 
 
 
 
   // resetting tiles back to default
-  function moveBackDown(){
-           resetBody();
-           $('.lebowski').removeClass('lebowski-in').addClass('lebowski-out');
-          $('.down-pressed').removeClass('down-pressed').addClass('down').addClass('active');
-          $('.active').css({'display':'block'}); 
+  function moveBackDown() {
+    resetBody();
 
+    $('.lebowski').removeClass('lebowski-in').addClass('lebowski-out');
+    $('.down-pressed').removeClass('down-pressed').addClass('down').addClass('active');
+    $('.active').css({'display':'block'}); 
 
-          tileIsOpen[2]=false;
-        }
-  function moveBackRight(){
-          resetBody();
-           $('.mobydick').removeClass('mobydick-in').addClass('mobydick-out');
-          $('.right-pressed').removeClass('right-pressed').addClass('right').addClass('active');
-          $('.active').css({'display':'block'}); 
-
-
-          tileIsOpen[1]=false;
+    tileIsOpen[2]=false;
   }
-  function moveBackUp(){
-           resetBody();
-            $('.birdonit').removeClass('birdonit-in').addClass('birdonit-out');
-           $('.top-pressed').removeClass('top-pressed').addClass('top').addClass('active');
-          $('.active').css({'display':'block'}); 
 
+  function moveBackRight() {
+    resetBody();
+    
+    $('.mobydick').removeClass('mobydick-in').addClass('mobydick-out');
+    $('.right-pressed').removeClass('right-pressed').addClass('right').addClass('active');
+    $('.active').css({'display':'block'}); 
 
-          tileIsOpen[0]=false;
+    tileIsOpen[1] = false;
   }
-  function moveBackLeft(){
-          resetBody();
-          $('.westeros').removeClass('westeros-in').addClass('westeros-out');
-          $('.left-pressed').removeClass('left-pressed').addClass('left').addClass('active');
-          $('.active').css({'display':'block'}); 
 
-          tileIsOpen[3]=false;
+  function moveBackUp() {
+    resetBody();
+
+    $('.birdonit').removeClass('birdonit-in').addClass('birdonit-out');
+    $('.top-pressed').removeClass('top-pressed').addClass('top').addClass('active');
+    $('.active').css({'display':'block'}); 
+
+    tileIsOpen[0] = false;
+  }
+
+  function moveBackLeft() {
+    resetBody();
+
+    $('.westeros').removeClass('westeros-in').addClass('westeros-out');
+    $('.left-pressed').removeClass('left-pressed').addClass('left').addClass('active');
+    $('.active').css({'display':'block'}); 
+
+    tileIsOpen[3] = false;
   }
 
 
   function openTile(){
-   $('h1').css({'display':'none'});
-           $('.active').css({'display':'none'});
-         //  $('.logo').removeClass('logo-shrink').addClass('logo-grow');
+    $('h1').css({'display': 'none'});
+    $('.active').css({'display': 'none'});
   }
 
 
   function resetBody(){
-          $('body').css({'background-color':bgColor});
-           $('h1').css({'display':'block'});
-        //   $('.logo').removeClass('logo-grow').addClass('logo-shrink');
+    $('body').css({'background-color': bgColor});
+    $('h1').css({'display': 'block'});
   }
 
 
